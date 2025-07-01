@@ -1,31 +1,33 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.36127.28 d17.14
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "calculatingmean_standarddeviation", "calculatingmean_standarddeviation\calculatingmean_standarddeviation.vcxproj", "{D445C024-0DD1-4903-B658-698AEB2853FD}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x64 = Debug|x64
-		Debug|x86 = Debug|x86
-		Release|x64 = Release|x64
-		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D445C024-0DD1-4903-B658-698AEB2853FD}.Debug|x64.ActiveCfg = Debug|x64
-		{D445C024-0DD1-4903-B658-698AEB2853FD}.Debug|x64.Build.0 = Debug|x64
-		{D445C024-0DD1-4903-B658-698AEB2853FD}.Debug|x86.ActiveCfg = Debug|Win32
-		{D445C024-0DD1-4903-B658-698AEB2853FD}.Debug|x86.Build.0 = Debug|Win32
-		{D445C024-0DD1-4903-B658-698AEB2853FD}.Release|x64.ActiveCfg = Release|x64
-		{D445C024-0DD1-4903-B658-698AEB2853FD}.Release|x64.Build.0 = Release|x64
-		{D445C024-0DD1-4903-B658-698AEB2853FD}.Release|x86.ActiveCfg = Release|Win32
-		{D445C024-0DD1-4903-B658-698AEB2853FD}.Release|x86.Build.0 = Release|Win32
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {B28D00ED-2D1F-4244-8831-685E0755618D}
-	EndGlobalSection
-EndGlobal
+// calculatingmean_standarddeviation.cpp : Bu dosya 'main' işlevi içeriyor. Program yürütme orada başlayıp biter.
+//
+
+#include <iostream>
+#include <cmath> 
+using namespace std;
+
+int main() {
+    const int n = 4;
+    int array[n];
+    double sum = 0;
+
+    cout << "Please enter 4 numbers:" << endl;
+    for (int i = 0; i < n; i++) {
+        cout << "array[" << i << "] = ";
+        cin >> array[i];
+        sum += array[i]; 
+
+    double mean = sum / n;
+
+    double variance = 0;
+    for (int i = 0; i < n; i++) {
+        variance += pow(array[i] - mean, 2);
+    }
+    variance /= n;
+
+    double stdDeviation = sqrt(variance);
+
+    cout << "Mean: " << mean << endl;
+    cout << "Standard Deviation: " << stdDeviation << endl;
+
+    return 0;
+}
