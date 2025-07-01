@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36127.28 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "convertingtemperature", "convertingtemperature\convertingtemperature.vcxproj", "{427115C7-F0C8-4080-8495-CE6FE36AEB0B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{427115C7-F0C8-4080-8495-CE6FE36AEB0B}.Debug|x64.ActiveCfg = Debug|x64
+		{427115C7-F0C8-4080-8495-CE6FE36AEB0B}.Debug|x64.Build.0 = Debug|x64
+		{427115C7-F0C8-4080-8495-CE6FE36AEB0B}.Debug|x86.ActiveCfg = Debug|Win32
+		{427115C7-F0C8-4080-8495-CE6FE36AEB0B}.Debug|x86.Build.0 = Debug|Win32
+		{427115C7-F0C8-4080-8495-CE6FE36AEB0B}.Release|x64.ActiveCfg = Release|x64
+		{427115C7-F0C8-4080-8495-CE6FE36AEB0B}.Release|x64.Build.0 = Release|x64
+		{427115C7-F0C8-4080-8495-CE6FE36AEB0B}.Release|x86.ActiveCfg = Release|Win32
+		{427115C7-F0C8-4080-8495-CE6FE36AEB0B}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {48A22D1F-5912-42D8-BB52-31AB738B2011}
+	EndGlobalSection
+EndGlobal
