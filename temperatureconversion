@@ -1,4 +1,4 @@
-// convertingtemperature.cpp : Bu dosya 'main' işlevi içeriyor. Program yürütme orada başlayıp biter.
+// temperatureconversion.cpp : Bu dosya 'main' işlevi içeriyor. Program yürütme orada başlayıp biter.
 //
 
 #include <iostream>
