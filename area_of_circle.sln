@@ -1,31 +1,24 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.36127.28 d17.14
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "area_of_circle", "area_of_circle\area_of_circle.vcxproj", "{B6C67C18-D06B-4D3C-B5DD-7D5010B2DB17}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x64 = Debug|x64
-		Debug|x86 = Debug|x86
-		Release|x64 = Release|x64
-		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B6C67C18-D06B-4D3C-B5DD-7D5010B2DB17}.Debug|x64.ActiveCfg = Debug|x64
-		{B6C67C18-D06B-4D3C-B5DD-7D5010B2DB17}.Debug|x64.Build.0 = Debug|x64
-		{B6C67C18-D06B-4D3C-B5DD-7D5010B2DB17}.Debug|x86.ActiveCfg = Debug|Win32
-		{B6C67C18-D06B-4D3C-B5DD-7D5010B2DB17}.Debug|x86.Build.0 = Debug|Win32
-		{B6C67C18-D06B-4D3C-B5DD-7D5010B2DB17}.Release|x64.ActiveCfg = Release|x64
-		{B6C67C18-D06B-4D3C-B5DD-7D5010B2DB17}.Release|x64.Build.0 = Release|x64
-		{B6C67C18-D06B-4D3C-B5DD-7D5010B2DB17}.Release|x86.ActiveCfg = Release|Win32
-		{B6C67C18-D06B-4D3C-B5DD-7D5010B2DB17}.Release|x86.Build.0 = Release|Win32
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {4EE5D2B4-FB13-4B96-A719-C830E97FA3EF}
-	EndGlobalSection
-EndGlobal
+// area_of_circle.cpp : Bu dosya 'main' işlevi içeriyor. Program yürütme orada başlayıp biter.
+//
+
+#include <iostream>
+#define PI 3.14
+
+
+int main()
+{
+    double radius, area, circumference;
+
+    std::cout << "Enter the radius of the circle:";
+    std::cin >> radius;
+
+    area = PI * radius * radius;
+    circumference = 2 * PI * radius;
+
+    std::cout << "Area of the circle:" << area << std::endl;
+    std::cout << "Circumference of the circle :" << circumference << std::endl;
+
+    return 0;
+}
+
+// 
